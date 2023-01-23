@@ -19,7 +19,7 @@ Then when a user starts a new chat session:
 3. Create a prompt containing the most relevant docs (from 2.), the question, and some stuff that instructs gpt3 how to respond.
 4. Send to OpenAI API and return response to user
 
-Finall for sessions with chat history. The problem is that chat history can quickly become more than the max prompt size. When the user asks a follow up question.
+Finally for sessions with chat history. The problem is that chat history can quickly become more than the max prompt size. When the user asks a follow up question.
 1. Let gpt3 create a new question from the chat history and the follow up question. We use the technique of few-shot prompting here.
 2. Create an embedding for the new question. Then the rest is same when a user starts a new session.
 
